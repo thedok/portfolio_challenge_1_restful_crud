@@ -1,0 +1,17 @@
+<div class="container">
+
+<h2>Edit your posting:</h2>
+<form action="/post/<%= @post.id %>" method="POST">
+	<p><label>Title:
+	<input type="text" name="title" value="<%= @post.title%>"></p>
+	</label>
+	<label>Content:
+	<p><textarea name="content"><%= @post.content %></textarea><p>
+	</label>
+	<p><input type="submit" value="Edit"></p>
+</form>
+<form action="/post/<%= @post.id %>/delete" method="POST">
+	<input type="submit" value="Delete">
+</form>
+
+</div>

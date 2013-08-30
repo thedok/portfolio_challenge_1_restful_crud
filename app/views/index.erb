@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Welcome to Note Tracker!</h1>
+  <p><a href="/post/new">Create a note</a></p>
+
+  <% @posts.each do |post| %>
+  <a href=<%= "/post/#{post.id}/edit" %>><%= post.title%></a>
+  <%= post.content %>
+  <br>
+  <% end %>
+
+</div>

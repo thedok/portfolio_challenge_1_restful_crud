@@ -1,0 +1,8 @@
+<div class="container">
+	
+<h1>Show list of posts:</h1>
+<% @post.each do |post| %>
+	<%= "#{post.id} #{post.title} #{post.content}"	
+<% end %>
+
+</div>
